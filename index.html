@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sunshine Group | Building Roads. Supplying Progress</title>
+<style>
+:root {
+  --navy: #092B57;
+  --blue: #07509A;
+  --gold: #E6A51A;
+  --white: #ffffff;
+}
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body {
+  font-family: Arial, sans-serif;
+  background: #f7f8fa;
+  color: #202938;
+  line-height: 1.7;
+}
+header {
+  background: var(--navy);
+  color: white;
+  padding: 22px 7%;
+  border-bottom: 4px solid var(--gold);
+}
+.brand { font-size: 27px; font-weight: bold; }
+.tagline { color: var(--gold); font-size: 14px; }
+nav { margin-top: 16px; display: flex; flex-wrap: wrap; gap: 22px; }
+nav a {
+  color: white; text-decoration: none; font-weight: bold;
+}
+nav a:hover { color: var(--gold); }
+.hero {
+  background: linear-gradient(120deg, var(--navy), var(--blue));
+  color: white; padding: 90px 8%; text-align: center;
+  border-bottom: 5px solid var(--gold);
+}
+.hero h1 { font-size: clamp(30px, 5vw, 48px); }
+.hero p { color: var(--gold); font-size: 19px; margin-top: 12px; }
+main { max-width: 1100px; margin: auto; padding: 35px 22px; }
+section {
+  background: white; margin: 25px 0; padding: 30px;
+  border: 1px solid #e4e8ee; border-left: 4px solid var(--gold);
+  border-radius: 8px;
+}
+h2 { color: var(--navy); margin-bottom: 14px; }
+h3 { color: var(--blue); margin: 16px 0 6px; }
+p { margin: 8px 0; }
+ul { padding-left: 24px; }
+.grid {
+  display: grid; grid-template-columns: repeat(auto-fit,minmax(230px,1fr));
+  gap: 18px; margin-top: 15px;
+}
+.card {
+  border: 1px solid var(--gold); border-radius: 8px;
+  padding: 20px; background: #fff;
+}
+.card h3 { margin-top: 0; }
+footer {
+  background: var(--navy); color: white; text-align: center;
+  padding: 28px 15px; margin-top: 35px;
+}
+footer span { color: var(--gold); }
+.page { display: none; }
+.page.active { display: block; }
+@media(max-width:600px) {
+  nav { gap: 12px; }
+  nav a { font-size: 14px; }
+  section { padding: 22px 18px; }
+}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">SUNSHINE GROUP</div>
+  <div class="tagline">Building Roads. Supplying Progress</div>
+  <nav>
+    <a href="#home" onclick="showPage('home')">Home</a>
+    <a href="#about" onclick="showPage('about')">About Us</a>
+    <a href="#projects" onclick="showPage('projects')">Projects</a>
+    <a href="#contact" onclick="showPage('contact')">Get in Touch</a>
+  </nav>
+</header>
+
+<div class="hero">
+  <h1>SUNSHINE GROUP</h1>
+  <p>Building Roads. Supplying Progress</p>
+</div>
+
+<main>
+
+<div id="home" class="page active">
+  <section>
+    <h2>WHO WE ARE</h2>
+    <h3>A Trusted Partner in Construction and Material Supply</h3>
+    <p>Sunshine Group is committed in supporting infrastructure and development projects across India</p>
+    <p>With a focus on operational execellence, we strive to deliver dependable service and build lasting business partnerships.</p>
+  </section>
+
+  <section>
+    <h2>EXPERIENCE &amp; EXPERTISE</h2>
+    <p>Sunshine Group Combines practical industry knowledge with a commitment to quality, reliability and professional execution for over 7+ years of Experience.</p>
+    <p>With a focus on quality, efficient operations and timely execution, we aim to support infrastructure projects from planning to delivery with our expertise in :</p>
+    <ul>
+      <li>Construction of Highways and Expressways that strengthen national connectivity</li>
+      <li>Supply of Construction materials across multiple states in India</li>
+      <li>Construction of Civil Works in all types</li>
+    </ul>
+  </section>
+</div>
+
+<div id="about" class="page">
+  <section>
+    <h2>Building Trust Through Quality and Commitment</h2>
+    <h3>Infrastructure is more than construction—it is the foundation of economic growth, connectivity, and opportunity.</h3>
+    <p>Sunshine Group is a construction and infrastructure-focused business committed in supporting development projects through dependable material supply and construction services.</p>
+    <p>With expertise in construction material supply, road construction and civil construction work, we aim to deliver reliable solutions through quality commitment, efficient operations and strong business relationships.</p>
+  </section>
+
+  <section>
+    <h2>OUR LEADERSHIP</h2>
+    <p>Sunshine Group had a vision to contribute in India's construction and infrastructure sector through reliable services, quality commitment and strong business relationships.</p>
+    <div class="grid">
+      <div class="card"><h3>Proprietor</h3><p>Mrs. Kiran Mishra</p></div>
+      <div class="card"><h3>Executive Management</h3><p>Mr. Umesh Kumar Mishra</p></div>
+      <div class="card"><h3>Business operations</h3><p>Mr. Anshuman Mishra</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Our Purpose, Our promise, Our path to progress</h2>
+    <h3>Vision</h3>
+    <p><strong>Building a better tomorrow, Shaping a stronger future</strong></p>
+    <p>Sunshine is a trusted and recognized name in the construction and infrastructure sector by contributing quality infrastructure development, building strong partnerships and creating long-term value through excellence and reliability.</p>
+    <h3>Mission</h3>
+    <p><strong>Delivering Quality, Creating Trust, Driving Progress</strong></p>
+    <p>Sunshine delivers dependable construction material supply and professional civil and road construction services through quality commitment, efficient operations, timely execution and customer-focused business practices.</p>
+  </section>
+
+  <section>
+    <h2>OUR JOURNEY</h2>
+    <h3>From Vision to Progress</h3>
+    <p>Sunshine Group began its journey in 2018 with a vision to contribute in the construction and infrastructure sector.</p>
+    <p>Since then, we have continued to grow through dedication, hard work and a commitment to dependable services.</p>
+    <p>From construction material supply to road and civil construction work, our journey has been shaped by valuable business relationships and a focus on quality.</p>
+    <p>Today, we continue to move forward with the same commitment, aiming to expand our reach, undertake new opportunities and contribute to India's infrastructure development.</p>
+    <p><strong>Growing Stronger Every Year</strong></p>
+  </section>
+</div>
+
+<div id="projects" class="page">
+  <section>
+    <h2>Our Work. Our Commitment. Our Legacy.</h2>
+    <h3>OUR ESTEEMED CLIENTS</h3>
+    <p>Building Strong Relationships. Creating Lasting Value</p>
+    <p>Client logos and images can be added here later.</p>
+  </section>
+
+  <section>
+    <h2>Glimps of Our Work</h2>
+    <p>Reflection of our Commitment</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Purvanchal Expressway</h3>
+        <p>Associated site development and ground works, along with the required supply of construction materials, contributing to the expressway projec t.</p>
+      </div>
+      <div class="card">
+        <h3>Gorakhpur Link Expressway</h3>
+        <p>Supporting infrastructure development through site preparation, associated works and supply of construction materials.</p>
+      </div>
+      <div class="card">
+        <h3>Bundelkhand Expressway</h3>
+        <p>Contributing in expressway development through construction material supply and associated project activities.</p>
+      </div>
+      <div class="card">
+        <h3>Civil Construction</h3>
+        <p>Undertaking civil construction activities with a focus on quality workmanship and dependable execution.</p>
+      </div>
+      <div class="card">
+        <h3>Material Supply</h3>
+        <p>Supplying of essential construction materials (Sand, Aggregate, Stone Dust, etc.) to support infrastructure and development requirments.</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div id="contact" class="page">
+  <section>
+    <h2>Together, Let's Build the Future</h2>
+    <div class="grid">
+      <div class="card">
+        <h3>Head Office</h3>
+        <p>Lucknow, Uttar Pradesh, India</p>
+      </div>
+      <div class="card">
+        <h3>Contact :</h3>
+        <p>+91 8468018221</p>
+        <p>+91 9415239041</p>
+      </div>
+      <div class="card">
+        <h3>Email Address</h3>
+        <p>mishrau120@gmail.com</p>
+      </div>
+      <div class="card">
+        <h3>Business Operations</h3>
+        <p>Multiple States Across India</p>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer>
+  <h2 style="color:white">SUNSHINE GROUP</h2>
+  <p><span>Building Roads. Supplying Progress</span></p>
+  <p>Lucknow, Uttar Pradesh, India</p>
+  <p>© 2026 Sunshine Group. All Rights Reserved.</p>
+</footer>
+
+<script>
+function showPage(pageId) {
+  document.querySelectorAll('.page').forEach(function(page) {
+    page.classList.remove('active');
+  });
+  document.getElementById(pageId).classList.add('active');
+  window.scrollTo(0, 0);
+}
+window.addEventListener('load', function() {
+  var page = window.location.hash.replace('#', '');
+  if (document.getElementById(page)) showPage(page);
+});
+</script>
+
+</body>
+</html>
