@@ -20,10 +20,10 @@ body {
   line-height: 1.7;
 }
 header {
-  background: var(--navy);
+  background: transparent;
   color: white;
   padding: 22px 7%;
-  border-bottom: 4px solid var(--gold);
+  border-bottom: none;
 }
 .brand { font-size: 27px; font-weight: bold; }
 .tagline { color: var(--gold); font-size: 14px; }
@@ -32,8 +32,14 @@ nav a {
   color: white; text-decoration: none; font-weight: bold;
 }
 nav a:hover { color: var(--gold); }
+  header {
+  background-image: linear-gradient(rgba(9,43,87,0.35), rgba(9,43,87,0.35)), url("home-banner.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 .hero {
-background: linear-gradient(rgba(9,43,87,0.35), rgba(9,43,87,0.35)), url("home-banner.jpg") center/cover no-repeat;
+  background: transparent;
   color: white; padding: 180px 8%; text-align: center;
   border-bottom: 5px solid var(--gold);
 }
